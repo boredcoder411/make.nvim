@@ -4,7 +4,7 @@ local config = {}
 
 function M.setup()
 	config = vim.tbl_deep_extend("force", config, setup_config or {})
-	vim.api.nvim_create_user_command("MakePanel", require("plugin_name").make(), {})
+	vim.api.nvim_create_user_command("MakePanel", require("make").make(), {})
 end
 
 function M.make()
