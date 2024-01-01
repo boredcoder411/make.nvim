@@ -9,7 +9,11 @@ require("lazy").setup({
         }
 })
 ```
+And this line to your init.lua:
+```lua
+require("make").setup({})
+```
 This should add the ```:MakePanel``` command to your neovim
 ## Extra steps (optional)
 ```vim.api.nvim_set_keymap('n', 'mk', ':MakePanel<CR>', { noremap = true, silent = true })```
-This is to add the ```mk``` keybind to run ```:MakePanel```
+This adds the ```mk``` keybind to run ```:MakePanel```
